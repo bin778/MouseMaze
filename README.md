@@ -1,5 +1,5 @@
 <div>
-<h1>🌄MouseMaze</h1>
+<h1>🎮MouseMaze</h1>
 </div>
 
 ## 프로젝트 소개
