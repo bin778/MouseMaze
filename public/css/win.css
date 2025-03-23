@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../image/background.jpg');
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3.5rem;
+  color: lightgrey;
+  overflow: hidden;
+  white-space: nowrap;
+}

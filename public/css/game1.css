@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../image/background.jpg');
+}
+
+#game-area {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: lightgray;
+}
+
+#start,
+#goal {
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+}
+
+#start {
+  background-color: blue;
+  color: white;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+#goal {
+  background-color: green;
+  color: white;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.wall {
+  position: absolute;
+  height: 50px;
+  width: 500px;
+  background-color: black;
+}
+
+/* 장애물 위치 설정 */
+.wall:nth-child(2) {
+  top: 80px;
+  left: 0px;
+}
+.wall:nth-child(3) {
+  top: 200px;
+  left: 100px;
+}
+.wall:nth-child(4) {
+  top: 320px;
+  left: 0px;
+}
+.wall:nth-child(5) {
+  top: 410px;
+  left: 50px;
+  height: 100px;
+  width: 550px;
+}

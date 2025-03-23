@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="/css/game1.css" />
+  </head>
+  <body>
+    <div id="game-area">
+      <div id="start">START</div>
+      <div class="wall"></div>
+      <div class="wall"></div>
+      <div class="wall"></div>
+      <div class="wall"></div>
+      <div id="goal">GOAL</div>
+    </div>
+  </body>
+  <script>
+    let gameStart = false;
+    const gameArea = document.getElementById('game-area');
+    const start = document.getElementById('start');
+    const goal = document.getElementById('goal');
+    const walls = document.querySelectorAll('.wall');
+    goal.style.display = 'none';
+
+    // 출발 버튼을 클릭하면 게임 시작
+    start.addEventListener('click', () => {
+      gameStart = true;
+      start.style.display = 'none';
+      goal.style.display = 'block';
+    });
+
+    // 벽에 닿으면 게임 오버
+    walls.forEach(wall => {
+      wall.addEventListener('mouseover', () => {
+        if (gameStart) {
+          gameOver();
+        }
+      });
+    });
+
+    // 배경을 벗어나면 게임 오버
+    gameArea.addEventListener('mouseleave', () => {
+      if (gameStart) {
+        gameOver();
+      }
+    });
+
+    // 도착 버튼을 클릭하면 성공
+    goal.addEventListener('click', () => {
+      if (gameStart) {
+        gameStart = false;
+        start.style.display = 'block';
+        goal.style.display = 'none';
+        location.href = '/game2';
+      }
+    });
+
+    function gameOver() {
+      gameStart = false;
+      start.style.display = 'block';
+      goal.style.display = 'none';
+      location.href = '/gameover';
+    }
+  </script>
+</html>

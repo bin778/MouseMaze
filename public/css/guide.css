@@ -1,0 +1,36 @@
+body {
+  background-image: url('../image/background.jpg');
+}
+
+.descripton-background {
+  background-color: white;
+  opacity: 0.5;
+  width: 500px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 45%;
+}
+
+.descripton {
+  text-align: center;
+  margin: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+}
+
+.start-button {
+  position: relative;
+  top: 30%;
+  left: 40%;
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+  border: 2px solid gray;
+  background-color: lightgrey;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+}

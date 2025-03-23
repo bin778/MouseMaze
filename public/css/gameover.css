@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../image/background.jpg');
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3.5rem;
+  color: lightgrey;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.re-button {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+  border: 2px solid gray;
+  background-color: lightgrey;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
