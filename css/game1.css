@@ -47,19 +47,19 @@ body {
 }
 
 /* 장애물 위치 설정 */
-.wall:nth-child(2) {
+.wall:nth-child(1) {
   top: 80px;
   left: 0px;
 }
-.wall:nth-child(3) {
+.wall:nth-child(2) {
   top: 200px;
   left: 100px;
 }
-.wall:nth-child(4) {
+.wall:nth-child(3) {
   top: 320px;
   left: 0px;
 }
-.wall:nth-child(5) {
+.wall:nth-child(4) {
   top: 410px;
   left: 50px;
   height: 100px;

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,16 +9,7 @@
   <body>
     <div id="game-area">
       <div id="start">START</div>
-      <div class="wall"></div>
-      <div class="wall"></div>
-      <div class="wall"></div>
-      <div class="wall"></div>
-      <div class="wall"></div>
-      <div class="wall"></div>
-      <div class="wall"></div>
-      <div class="wall"></div>
-      <div class="wall"></div>
-      <div class="wall"></div>
+      <div id="walls"></div>
       <div id="goal">GOAL</div>
     </div>
   </body>
@@ -27,11 +18,19 @@
     const gameArea = document.getElementById('game-area');
     const start = document.getElementById('start');
     const goal = document.getElementById('goal');
-    const walls = document.querySelectorAll('.wall');
+    const wallsContainer = document.getElementById('walls');
     goal.style.display = 'none';
 
     let mouseX = 0,
       mouseY = 0;
+
+    // 벽 요소 생성
+    for (let i = 0; i < 10; i++) {
+      const wall = document.createElement('div');
+      wall.classList.add('wall');
+      wallsContainer.appendChild(wall);
+    }
+    const walls = document.querySelectorAll('.wall');
 
     // 출발 버튼을 클릭하면 게임 시작
     start.addEventListener('click', () => {

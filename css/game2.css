@@ -47,26 +47,26 @@ body {
 }
 
 /* 장애물 위치 설정 */
-.wall:nth-child(2) {
+.wall:nth-child(1) {
   bottom: 80px;
 }
-.wall:nth-child(3) {
+.wall:nth-child(2) {
   bottom: 200px;
   width: 250px;
   right: 0px;
 }
-.wall:nth-child(4) {
+.wall:nth-child(3) {
   bottom: 230px;
   width: 250px;
   right: 250px;
 }
 
-.wall:nth-child(5) {
+.wall:nth-child(4) {
   bottom: 350px;
   width: 500px;
 }
 
-.wall:nth-child(6) {
+.wall:nth-child(5) {
   bottom: 130px;
   width: 110px;
   height: 80px;
@@ -74,7 +74,7 @@ body {
   animation: wall-move1 1s infinite linear;
 }
 
-.wall:nth-child(7) {
+.wall:nth-child(6) {
   bottom: 280px;
   width: 40px;
   left: 310px;
@@ -82,28 +82,28 @@ body {
   animation: wall-move2 0.7s infinite linear;
 }
 
-.wall:nth-child(8) {
+.wall:nth-child(7) {
   right: 100px;
   top: 100px;
   width: 50px;
   height: 150px;
 }
 
-.wall:nth-child(9) {
+.wall:nth-child(8) {
   right: 200px;
   top: 0px;
   width: 50px;
   height: 150px;
 }
 
-.wall:nth-child(10) {
+.wall:nth-child(9) {
   right: 300px;
   top: 100px;
   width: 50px;
   height: 150px;
 }
 
-.wall:nth-child(11) {
+.wall:nth-child(10) {
   right: 350px;
   top: -20px;
   width: 150px;
